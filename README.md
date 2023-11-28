@@ -1,8 +1,8 @@
-# Alpha-Green
-  <img src= "images/README.MD_images/logo.png" alt="team logo"> Alpha-Green
+# <img src= "images/README.MD_images/logo_big.png" alt="team logo">Alpha-Green
+  
 <hr>
 
-## <img scr= "images/README.MD_images/trophy_icon.png" alt="trophy icon">Our Team
+## <img src= "images/README.MD_images/trophy_icon.png" alt="trophy icon">Our Team
  
 #### Tsvetan Zhekov - Scrum Trainer
 #### Martin Shavov - Designer
