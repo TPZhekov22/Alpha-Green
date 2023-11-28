@@ -1,4 +1,4 @@
-# <img src= "images/README.MD_images/logo_big.png" alt="team logo">Alpha-Green
+# <img src= "images/README.MD_images/logo.png" alt="team logo">Alpha-Green
   
 <hr>
 
