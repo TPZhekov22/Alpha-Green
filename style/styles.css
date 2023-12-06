@@ -1,6 +1,5 @@
 body{
     font-family: 'Noto Sans', sans-serif;
-    background-color: #b9e769;
     margin: 0;
     padding: 0;
     color: white;
@@ -44,4 +43,15 @@ nav .nav-links a {
 
 nav a:hover {
     background-color: #333;
+}
+.back{
+    background-image: url(https://wallpapers.com/images/featured-full/tree-0wdwtdt9xzcm91b1.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px) brightness(0.3);
+    -webkit-filter: blur(4px);
+    opacity: 90%;
+
 }
