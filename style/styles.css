@@ -22,6 +22,7 @@ nav a {
     text-align: center;
     text-decoration: none;
     transition: background-color 0.3s, padding 0.3s, border-width 0.3s;
+    font-size: 20px;
     padding: 10px 20px; /* Fixed padding for links */
     border: 3px solid transparent; /* Transparent border to compensate for hover padding increase */
 }
@@ -81,6 +82,7 @@ nav a:hover {
 .fade-in {
     opacity: 0;
     transition: opacity 1s ease-in-out;
+    font-size: 20px;
 }
 
 .fade-in-animation {
@@ -90,9 +92,34 @@ nav a.current {
     border-bottom: 3px solid #fff;
 }
 
-/* Adjust the hover style for better consistency */
-nav a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 10px 20px;
-    border-bottom: 6px solid #fff; /* Add an underline on hover */
+.footer-content {
+    max-width: 100%;
+    margin: 0 10px; /* Adjusted margin for better spacing */
+    display: flex;
+    flex-direction: column; /* Display items in a column layout */
+    align-items: center; /* Center content horizontally */
+    font-size: 18px;
+}
+
+.footer-content p {
+    margin: 5px 0; /* Add spacing between paragraphs */
+}
+
+.rtext {
+    text-align: right;
+}
+
+.ctext {
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px; /* Increased padding for better visual appeal */
+    z-index: 1000;
 }
