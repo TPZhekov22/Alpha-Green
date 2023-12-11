@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/feedback.css">
+    <title>Feedback - Alpha Green</title>
+    <link rel="icon" href="../images/website_images/logo_big.png">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">
+            <img src="../images/website_images/logo.png" alt="logo">
+            Alpha Green
+        </a>
+        <div class="nav-links">
+            <a href="../html/index.html">Home</a>
+            <a href="../html/ourteam.html">Our Team</a>
+            <a href="../html/products.html">Products</a>
+            <a href="#faq">FAQ</a>
+            <a href="../html/feedback.html" class="current">Feedback</a>
+        </div>
+    </nav>
+    <div class="back">
+        <img src="https://wallpapers.com/images/featured-full/tree-0wdwtdt9xzcm91b1.jpg">
+        <div class="content">
+            <div class="content-text">
+                <h2 class="fade-in">Feedback</h2>
+                <p class="fade-in">Your input means the world to us! Share your thoughts, suggestions, and ideas to help us blossom into a greener future together!</p>
+                <form action="#" method="post" class="fade-in">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="feedback-type">Feedback Type:</label>
+                    <select id="feedback-type" name="feedback-type" required>
+                        <option value="general">General Feedback</option>
+                        <option value="product">Product Feedback</option>
+                        <option value="bug">Report a Bug</option>
+                    </select>
+
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments" rows="4" required></textarea>
+
+                    <button type="submit">Submit Feedback</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="../scripts/main.js"></script>
+
+    <footer>
+        <div class="footer-content">
+            <p>+359 87 708 6622</p>
+            <p class="ctext">office@codingburgas.bg</p>
+            <p class="rtext">READY TO TRAVEL WITH US?</p>
+        </div>
+    </footer>
+</body>
+</html>
