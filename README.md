@@ -15,7 +15,7 @@
 
 ## <img src= "images/README.MD_images/Document_icon.png" alt="Document icon"> Documentation
 
-#### <img src= "images/README.MD_images/Word_logo.png" alt="word logo"> [Documentation](documents/alpha_green_documentation.docx)
+#### <img src= "images/README.MD_images/Word_logo.png" alt="word logo"> [Documentation](documents/Alpha_Green_documentation.docx)
 #### <img src= "images/README.MD_images/Powerpoint_logo.png" alt="powerpoint logo"> [Presentation](documents/alpha_green_presentation.pptx)
 
 ## <img src= "images/README.MD_images/laptop_icon.png" alt="laptop icon"> Used Technologies
