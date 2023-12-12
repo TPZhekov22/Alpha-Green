@@ -10,11 +10,11 @@ nav {
     position: fixed;
     width: 100%;
     z-index: 1000;
-    background-color: rgba(0, 0, 0, 0.7); /* Dark background color for higher contrast */
+    background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px; /* Adjust padding */
+    padding: 10px 20px;
 }
 
 nav a {
@@ -23,12 +23,12 @@ nav a {
     text-decoration: none;
     transition: background-color 0.3s, padding 0.3s, border-width 0.3s;
     font-size: 20px;
-    padding: 10px 20px; /* Fixed padding for links */
-    border: 3px solid transparent; /* Transparent border to compensate for hover padding increase */
+    padding: 10px 20px;
+    border: 3px solid transparent;
 }
 
 nav a.logo {
-    font-size: 30px; /* Adjust font size */
+    font-size: 30px;
     display: flex;
     align-items: center;
 }
@@ -45,14 +45,15 @@ nav .nav-links {
 }
 
 nav .nav-links a {
-    margin: 0 40px; /* Increase distance between navbar links */
+    margin: 0 40px;
 }
 
 nav a:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Light background color on hover for contrast */
-    padding: 10px 20px; /* Increase padding on hover */
-    border-width: 6px; /* Increase border width on hover */
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    border-width: 6px;
 }
+
 .back {
     position: relative;
     width: 100vw;
@@ -64,7 +65,7 @@ nav a:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: blur(4px) brightness(0.3);
+    filter: brightness(0.3);
 }
 
 .content {
@@ -88,21 +89,22 @@ nav a:hover {
 .fade-in-animation {
     opacity: 1;
 }
+
 nav a.current {
     border-bottom: 3px solid #fff;
 }
 
 .footer-content {
     max-width: 100%;
-    margin: 0 10px; /* Adjusted margin for better spacing */
+    margin: 0 10px;
     display: flex;
-    flex-direction: column; /* Display items in a column layout */
-    align-items: center; /* Center content horizontally */
+    flex-direction: column;
+    align-items: center;
     font-size: 18px;
 }
 
 .footer-content p {
-    margin: 5px 0; /* Add spacing between paragraphs */
+    margin: 5px 0;
 }
 
 .rtext {
@@ -120,6 +122,53 @@ footer {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
-    padding: 20px; /* Increased padding for better visual appeal */
+    padding: 20px;
     z-index: 1000;
+    filter: brightness(0.5);
+}
+
+/* Additional styles for FAQ page */
+
+.section {
+    background-color: black;
+    padding: 20px;
+    border-radius: 0px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 18px;
+    border-left: 2px solid #ffffff;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 90px;
+}
+
+.list strong {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.sub-list {
+    font-style: italic;
+    color: #3498db;
+    margin-top: 10px;
+}
+
+.sub-list li {
+    margin-bottom: 5px;
+}
+
+.fade-in p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .faq-container {
+        padding: 10px;
+    }
 }

@@ -9,3 +9,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     setTimeout(fadeIn, 500);
 });
+document.addEventListener("scroll", function() {
+    let scrolled = window.scrollY;
+    let translateValue = "translateY(" + scrolled + "px)";
+    document.querySelector(".back img").style.transform = translateValue;
+});
