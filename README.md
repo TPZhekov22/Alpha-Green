@@ -11,7 +11,7 @@
 
 ## <img src= "images/README.MD_images/light-bulb_icon.png" alt="light bulb">Our Goal
 
-#### Our goal is to make a fully autonomous driving vehicle with at least level 3 driving automation   
+#### Our goal is to create a better and greener future for future generations to enjoy by developing state-of-the-art technologies and innovation to protect out planet from pollution and global warming.  
 
 ## <img src= "images/README.MD_images/Document_icon.png" alt="Document icon"> Documentation
 
