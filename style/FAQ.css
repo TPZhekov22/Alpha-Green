@@ -2,31 +2,21 @@
 
 body {
     margin: 0;
-    padding: 0;
     font-family: 'Noto Sans', sans-serif;
     color: white;
     font-size: 16px;
 }
 
+
 nav {
     position: fixed;
-    width: 100%;
+    width: calc(100% - 20px); /* Adjusted width to account for padding */
     z-index: 1000;
     background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-}
-
-nav a {
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    transition: background-color 0.3s, padding 0.3s, border-width 0.3s;
-    font-size: 20px;
-    padding: 10px 20px;
-    border: 3px solid transparent;
 }
 
 nav a.logo {
@@ -124,28 +114,63 @@ footer {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
-    padding: 20px;
+    padding: 10px;
     z-index: 1000;
 }
 
 /* Additional styles for FAQ page */
 
+.content-text {
+    text-align: center;
+    padding: 50px;
+    color: #fff; /* Set text color to white for better contrast on the blurred background */
+}
+
+
 .faq-container {
-    max-width: 800px;
+    max-width: 900px; /* Increase the maximum width for a larger FAQ box */
     margin: 50px auto;
     padding: 20px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
 }
 
 .faq-item {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.faq-item .question,
+.faq-item .answer {
+    text-align: center;
+    font-size: 18px;
+    width: 100%; /* Make sure the text takes up the full width */
+    transition: opacity 0.5s;
+}
+
+.faq-item .answer {
+    opacity: 0;
+    transform: rotateY(180deg);
+}
+
+.faq-item:hover .question {
+    opacity: 0;
+}
+
+.faq-item:hover .answer {
+    opacity: 1;
+    transform: rotateY(0deg); /* Reset the rotation on hover */
 }
 
 .question {
     font-size: 20px;
     font-weight: bold;
-    color: #007bff;
+    color: #333; /* Darken text color for questions */
 }
 
 .answer {
@@ -155,6 +180,6 @@ footer {
 
 @media (max-width: 768px) {
     .faq-container {
-        padding: 10px;
+        padding: 15px;
     }
 }

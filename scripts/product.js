@@ -1,14 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Add fade-in animation to product details
-    const productDetails = document.querySelector('.product-details');
-    productDetails.classList.add('fade-in-animation');
+    const productImg = document.querySelector('.product img');
 
-    // Add hover effect to the buy button
-    const buyButton = document.querySelector('.buy-button');
-    buyButton.addEventListener('mouseover', function () {
-        buyButton.style.backgroundColor = '#45a049';
-    });
-    buyButton.addEventListener('mouseout', function () {
-        buyButton.style.backgroundColor = '#4CAF50';
+    // Toggle the 'clicked' class on click
+    productImg.addEventListener('click', function () {
+        this.classList.toggle('clicked');
     });
 });

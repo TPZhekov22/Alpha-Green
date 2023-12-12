@@ -5,7 +5,7 @@ body {
     color: white;
     font-size: 16px;
 }
-
+ 
 nav {
     position: fixed;
     width: 100%;
@@ -16,7 +16,7 @@ nav {
     align-items: center;
     padding: 10px 20px;
 }
-
+ 
 nav a {
     color: #fff;
     text-align: center;
@@ -26,74 +26,120 @@ nav a {
     padding: 10px 20px;
     border: 3px solid transparent;
 }
-
+ 
 nav a.logo {
     font-size: 30px;
     display: flex;
     align-items: center;
 }
-
+ 
 nav a.logo img {
     max-width: 80px;
     height: auto;
     border-radius: 10px;
     margin-right: 10px;
 }
-
+ 
 nav .nav-links {
     display: flex;
 }
-
+ 
 nav .nav-links a {
     margin: 0 40px;
 }
-
+ 
 nav a:hover {
     background-color: rgba(255, 255, 255, 0.2);
     padding: 10px 20px;
     border-width: 6px;
 }
-
+ 
 .back {
     position: relative;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    background-image: url('https://wallpapers.com/images/featured-full/tree-0wdwtdt9xzcm91b1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Add this line to make the background fixed */
 }
-
-.back img {
+ 
+.back::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    filter: brightness(0.3);
+    background: rgba(0, 0, 0, 0.7);
 }
-
+ 
+.back img {
+    display: none; /* Hide the blurred image */
+}
+ 
 .content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 80%; /* Adjust the width of the content box */
+    max-width: 600px; /* Set a maximum width for the content box */
+    background: none; /* Remove background color for transparency */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
+ 
 .content-text {
     text-align: center;
-    padding: 50px;
+    color: white; /* Set the text color to white */
 }
-
+ 
+.topic-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+.image-container {
+    width: 100%;
+    max-width: 400px; /* Adjust the maximum width as needed */
+}
+ 
+.topic-image {
+    width: 100%; /* Adjust the width as needed */
+    max-width: 300px; /* Set a smaller maximum width for the images */
+    height: auto;
+    border-radius: 10px;
+    margin: 20px auto; /* Add margin for better spacing */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+ 
+.text-container {
+    text-align: center; /* Adjust text alignment */
+    margin-top: 10px; /* Adjust spacing between image and text */
+}
+ 
+.list li.active img {
+    display: block; /* Display the image when the list item is active */
+}
+ 
 .fade-in {
     opacity: 0;
     transition: opacity 1s ease-in-out;
     font-size: 20px;
 }
-
+ 
 .fade-in-animation {
     opacity: 1;
 }
-
+ 
 nav a.current {
     border-bottom: 3px solid #fff;
 }
-
+ 
 .footer-content {
     max-width: 100%;
     margin: 0 10px;
@@ -102,19 +148,19 @@ nav a.current {
     align-items: center;
     font-size: 18px;
 }
-
+ 
 .footer-content p {
     margin: 5px 0;
 }
-
+ 
 .rtext {
     text-align: right;
 }
-
+ 
 .ctext {
     text-align: center;
 }
-
+ 
 footer {
     position: fixed;
     bottom: 0;
@@ -126,17 +172,48 @@ footer {
     z-index: 1000;
     filter: brightness(0.5);
 }
-
+ 
 /* Additional styles for FAQ page */
-
+ 
 .section {
-    background-color: black;
-    padding: 20px;
-    border-radius: 0px;
+    position: relative;
+    padding: 50px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    
+    background-image: url('https://wallpapers.com/images/featured-full/tree-0wdwtdt9xzcm91b1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    color: #ffffff;
 }
-
+ 
+.section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9); /* Adjust the alpha value for darkness */
+}
+ 
+.image-container {
+    display: flex;
+    justify-content: space-around;
+}
+ 
+.hover-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+ 
+.hover-image:hover {
+    transform: rotateY(180deg);
+}
+ 
 .list {
     list-style-type: none;
     padding: 0;
@@ -146,27 +223,41 @@ footer {
     margin-top: 10px;
     margin-bottom: 90px;
 }
-
+ 
+.list li {
+    position: relative;
+    margin-bottom: 15px;
+    text-align: center; /* Center the text */
+    color: #eaeaea; /* Adjusted color for better readability */
+}
+ 
 .list strong {
     font-size: 24px;
-    color: #ffffff;
+    color: #f1c40f;
 }
-
+ 
 .sub-list {
     font-style: italic;
     color: #3498db;
     margin-top: 10px;
 }
-
+ 
 .sub-list li {
     margin-bottom: 5px;
+    list-style-type: none;
 }
-
+ 
 .fade-in p {
     margin-bottom: 20px;
     line-height: 1.5;
+    display: none;
 }
-
+ 
+.fade-in p.active {
+    display: block;
+}
+ 
+ 
 @media (max-width: 768px) {
     .faq-container {
         padding: 10px;
