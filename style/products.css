@@ -4,7 +4,6 @@ body {
     font-family: 'Noto Sans', sans-serif;
     color: white;
     font-size: 16px;
-    background-color: #2c3e50; /* Adjust background color */
 }
 
 nav {
@@ -16,7 +15,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav a {
@@ -24,6 +22,7 @@ nav a {
     text-align: center;
     text-decoration: none;
     transition: background-color 0.3s, padding 0.3s, border-width 0.3s;
+    font-size: 20px;
     padding: 10px 20px;
     border: 3px solid transparent;
 }
@@ -52,51 +51,85 @@ nav .nav-links a {
 nav a:hover {
     background-color: rgba(255, 255, 255, 0.2);
     padding: 10px 20px;
-    border-bottom: 0;
+    border-width: 6px;
 }
 
 .product-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
+    margin: 50px;
 }
 
-.product {
-    width: 300px;
-    margin: 20px;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.product-image {
+    flex: 1;
+    margin-right: 50px;
 }
 
-.product img {
+.product-image img {
     width: 100%;
     height: auto;
     border-radius: 10px;
 }
 
-.product h3 {
-    margin-top: 10px;
-    font-size: 1.5em;
+.product-details {
+    flex: 1;
 }
 
-.product p {
-    margin: 10px 0;
+.product-details h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
-button {
-    background-color: #3498db;
-    color: #fff;
+.product-description {
+    margin-bottom: 20px;
+}
+
+.product-price {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.buy-button {
+    background-color: #4CAF50;
+    color: white;
     padding: 10px 20px;
+    font-size: 18px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
 }
 
-button:hover {
-    background-color: #2980b9;
+.buy-button:hover {
+    background-color: #45a049;
+}
+
+.footer-content {
+    max-width: 100%;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+.rtext {
+    text-align: right;
+}
+
+.ctext {
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    z-index: 1000;
 }

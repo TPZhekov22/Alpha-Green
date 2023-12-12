@@ -3,36 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/products.css">
+    <link rel="stylesheet" href="../style/styles.css">
     <title>Alpha Green - Products</title>
     <link rel="icon" href="../images/website_images/logo_big.png">
 </head>
 <body>
     <nav>
-        <a href="../html/index.html">Home</a>
-        <a href="../html/ourteam.html">Our Team</a>
-        <a href="../html/products.html" class="current">Products</a>
-        <a href="#faq">FAQ</a>
-        <a href="../html/feedback.html">Feedback</a>
+        <a href="index.html" class="logo">
+            <img src="../images/website_images/logo.png" alt="logo">
+            Alpha Green
+        </a>
+        <div class="nav-links">
+            <a href="../html/index.html">Home</a>
+            <a href="../html/ourteam.html">Our Team</a>
+            <a href="../html/products.html" class="current">Products</a>
+            <a href="#faq">FAQ</a>
+            <a href="../html/feedback.html">Feedback</a>
+        </div>
     </nav>
 
-    <div class="products-container">
-        <div class="product">
-            <img src="../images/products/product1.jpg" alt="Product 1">
-            <h3>Product 1</h3>
-            <p>Description of Product 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <button>Add to Cart</button>
+    <div class="product-container">
+        <div class="product-image">
+            <img src="https://wallpapers.com/images/featured-full/tree-0wdwtdt9xzcm91b1.jpg" alt="Product Image">
         </div>
-
-        <div class="product">
-            <img src="../images/products/product2.jpg" alt="Product 2">
-            <h3>Product 2</h3>
-            <p>Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <button>Add to Cart</button>
+        <div class="product-details">
+            <h1>Product Name</h1>
+            <p class="product-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut elit libero, a pharetra augue.
+            </p>
+            <p class="product-price">$19.99</p>
+            <button class="buy-button">Add to Cart</button>
         </div>
     </div>
-
     <script src="../scripts/main.js"></script>
-    <script src="../scripts/products.js"></script>
+    <script src="../scripts/home.js"></script>
+    <footer>
+        <div class="footer-content">
+            <p>+359 87 708 6622</p>
+            <p class="ctext">office@codingburgas.bg</p>
+            <p class="rtext">READY TO PLANT WITH US?</p>
+        </div>
+    </footer>
 </body>
 </html>
