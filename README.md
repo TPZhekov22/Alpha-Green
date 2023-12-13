@@ -21,7 +21,7 @@
 ## <img src= "images/README.MD_images/laptop_icon.png" alt="laptop icon"> Used Technologies
 
 #### Used code editor & collaborative service:
-##### <img src= "images/README.MD_images/Visual_Studio_Code_logo.png" alt="Visual Studio Code logo"> <img src= "images/README.MD_images/github_logo.png" alt="github logo"> <img src= "images/README.MD_images/Git_logo.png" alt="Git logo">
+##### <img src= "images/README.MD_images/Visual_Studio_Code_logo.png" alt="Visual Studio Code logo"> <img src= "images/README.MD_images/github_logo.png" alt="github logo"> <img src= "images/README.MD_images/Git_logo.png" alt="Git logo"> <img src= "images/README.MD_images/Formspreelogo.png" alt="Git logo">
 #### Used tools for our overall design:
 ##### <img src= "images/README.MD_images/Figma_logo.png" alt="figma logo">
 #### Used technologies for our project development:

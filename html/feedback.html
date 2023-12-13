@@ -27,12 +27,12 @@
             <div class="content-text">
                 <h2 class="fade-in">Feedback</h2>
                 <p class="fade-in">Your input means the world to us! Share your thoughts, suggestions, and ideas to help us blossom into a greener future together!</p>
-                <form action="#" method="post" class="fade-in">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+                <form action="https://formspree.io/f/xknldlgn" method="POST">
+                    <label for="user_name">Name:</label>
+                    <input type="text" id="user_name" name="user_name" placeholder="Your name here" required>
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="user_email">Email:</label>
+                    <input type="email" id="user_email" name="user_email" placeholder="Your email here" required>
 
                     <label for="feedback-type">Feedback Type:</label>
                     <select id="feedback-type" name="feedback-type" required>
@@ -41,14 +41,15 @@
                         <option value="bug">Report a Bug</option>
                     </select>
 
-                    <label for="comments">Comments:</label>
-                    <textarea id="comments" name="comments" rows="4" required></textarea>
+                    <label for="message">Comments:</label>
+                    <textarea id="message" name="message" placeholder="Your message..." rows="4" required></textarea>
 
-                    <button type="submit">Submit Feedback</button>
+                    <button type="submit" class="submit-btn">Submit Feedback</button>
                 </form>
             </div>
         </div>
     </div>
+
 
     <script src="../scripts/main.js"></script>
 
