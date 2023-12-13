@@ -51,7 +51,7 @@ nav .nav-links a {
 nav a:hover {
     background-color: rgba(255, 255, 255, 0.2);
     padding: 10px 20px;
-    border-width: 6px;
+    border-bottom: 6px solid #fff;
 }
  
 .back {
@@ -62,7 +62,7 @@ nav a:hover {
     background-image: url('https://wallpapers.com/images/featured-full/tree-0wdwtdt9xzcm91b1.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Add this line to make the background fixed */
+    background-attachment: fixed;
 }
  
 .back::before {
@@ -76,7 +76,7 @@ nav a:hover {
 }
  
 .back img {
-    display: none; /* Hide the blurred image */
+    display: none;
 }
  
 .content {
@@ -84,9 +84,9 @@ nav a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%; /* Adjust the width of the content box */
-    max-width: 600px; /* Set a maximum width for the content box */
-    background: none; /* Remove background color for transparency */
+    width: 80%;
+    max-width: 600px;
+    background: none;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -94,7 +94,7 @@ nav a:hover {
  
 .content-text {
     text-align: center;
-    color: white; /* Set the text color to white */
+    color: white;
 }
  
 .topic-content {
@@ -105,31 +105,31 @@ nav a:hover {
  
 .image-container {
     width: 100%;
-    max-width: 400px; /* Adjust the maximum width as needed */
+    max-width: 400px;
 }
  
 .topic-image {
-    width: 100%; /* Adjust the width as needed */
-    max-width: 300px; /* Set a smaller maximum width for the images */
+    width: 100%;
+    max-width: 400px;
     height: auto;
     border-radius: 10px;
-    margin: 20px auto; /* Add margin for better spacing */
+    margin: 20px auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
  
 .text-container {
-    text-align: center; /* Adjust text alignment */
-    margin-top: 10px; /* Adjust spacing between image and text */
+    text-align: center;
+    margin-top: 10px;
 }
  
 .list li.active img {
-    display: block; /* Display the image when the list item is active */
+    display: block;
 }
  
 .fade-in {
     opacity: 0;
     transition: opacity 1s ease-in-out;
-    font-size: 20px;
+    font-size: 30px;
 }
  
 .fade-in-animation {
@@ -173,7 +173,7 @@ footer {
     filter: brightness(0.5);
 }
  
-/* Additional styles for FAQ page */
+
  
 .section {
     position: relative;
@@ -194,7 +194,7 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.9); /* Adjust the alpha value for darkness */
+    background: rgba(0, 0, 0, 0.9);
 }
  
 .image-container {
@@ -217,7 +217,7 @@ footer {
 .list {
     list-style-type: none;
     padding: 0;
-    font-size: 18px;
+    font-size: 22px;
     border-left: 2px solid #ffffff;
     padding-left: 10px;
     margin-top: 10px;
@@ -227,12 +227,12 @@ footer {
 .list li {
     position: relative;
     margin-bottom: 15px;
-    text-align: center; /* Center the text */
-    color: #eaeaea; /* Adjusted color for better readability */
+    text-align: center;
+    color: #eaeaea;
 }
  
 .list strong {
-    font-size: 24px;
+    font-size: 28px;
     color: #f1c40f;
 }
  

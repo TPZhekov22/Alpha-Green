@@ -23,7 +23,7 @@ nav a {
     text-decoration: none;
     transition: background-color 0.3s, padding 0.3s, border-width 0.3s;
     font-size: 20px;
-    padding: 10px 20px; /* Adjusted padding for links */
+    padding: 10px 20px;
     border: 3px solid transparent;
 }
  
@@ -45,7 +45,7 @@ nav .nav-links {
 }
  
 nav .nav-links a {
-    margin: 0 40px; /* Increase distance between navbar links */
+    margin: 0 40px;
 }
  
 nav a.current {
@@ -66,7 +66,7 @@ nav a:hover {
     background-image: url('https://wallpapers.com/images/featured-full/tree-0wdwtdt9xzcm91b1.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Add this line to make the background fixed */
+    background-attachment: fixed;
 }
  
 .back::before {
@@ -78,9 +78,11 @@ nav a:hover {
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
 }
- 
+ h2{
+    font-size: 30px;
+ }
 .back img {
-    display: none; /* Hide the blurred image */
+    display: none;
 }
  
 .content {
@@ -93,13 +95,13 @@ nav a:hover {
 .content-text {
     text-align: center;
     padding: 50px;
-    color: white; /* Set the text color to white */
+    color: white;
 }
  
 .fade-in {
     opacity: 0;
     transition: opacity 1s ease-in-out;
-    font-size: 20px;
+    font-size: 25px;
 }
  
 .fade-in-animation {
@@ -107,15 +109,15 @@ nav a:hover {
 }
 .footer-content {
     max-width: 100%;
-    margin: 0 10px; /* Adjusted margin for better spacing */
+    margin: 0 10px;
     display: flex;
-    flex-direction: column; /* Display items in a column layout */
-    align-items: center; /* Center content horizontally */
+    flex-direction: column;
+    align-items: center;
     font-size: 18px;
 }
  
 .footer-content p {
-    margin: 5px 0; /* Add spacing between paragraphs */
+    margin: 5px 0;
 }
  
 .rtext {
@@ -133,31 +135,31 @@ footer {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
-    padding: 20px; /* Increased padding for better visual appeal */
+    padding: 20px;
     z-index: 1000;
+    filter: brightness(0.5);
 }
 .team-section {
-    padding: 50px 20px; /* Adjust padding for space below text */
+    padding: 50px 20px;
     text-align: center;
-    background-color: black; /* Set the background color to black */
+    background-color: #0c0c0c;
 }
  
 .team-members {
     display: flex;
-    justify-content: space-around;
-    margin-top: 20px; /* Add space between team members */
-    flex-wrap: wrap; /* Allow wrapping */
-    flex-direction: row;
-    max-width: 1200px; /* Adjust the max-width based on your design */
-    margin: 0 auto; /* Center the container */
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
 }
  
 .team-member {
-    flex: 0 1 25%; /* Set the width of each box and allow wrapping */
-    max-width: 250px; /* Set a maximum width for each box */
+    flex: 0 1 25%;
+    max-width: 250px;
     text-align: center;
     margin: 10px;
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    box-sizing: border-box;
 }
  
 .member-box {
@@ -165,21 +167,21 @@ footer {
     border-radius: 10px;
     text-align: center;
     margin: 10px;
-    flex: 0 1 calc(25% - 20px); /* Set the width of each box and allow wrapping */
-    max-width: 250px; /* Set a maximum width for each box */
+    flex: 0 1 calc(25% - 20px);
+    max-width: 250px;
     font-size: 20px;
 }
  
 .team-member:nth-child(odd) .member-box {
-    background-color: rgba(50, 50, 50, 0.8); /* Darker background color for odd team members */
+    background-color: rgba(50, 50, 50, 0.8);
 }
  
 .team-member:nth-child(even) .member-box {
-    background-color: rgba(80, 80, 80, 0.8); /* Darker background color for even team members */
+    background-color: rgba(80, 80, 80, 0.8);
 }
  
 .team-member img {
-    width: 100%; /* Make the image fill the container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 15px; /* Add rounded corners */
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
 }
