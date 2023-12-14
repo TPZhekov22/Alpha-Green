@@ -140,7 +140,7 @@ footer {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
-    padding: 20px;
+    padding: 10px;
     z-index: 1000;
     filter: brightness(0.5);
 }

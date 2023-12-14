@@ -18,7 +18,7 @@ footer {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
-    padding: 20px;
+    padding: 10px;
     z-index: 1000;
     filter: brightness(0.5);
 }
@@ -82,7 +82,7 @@ footer {
 /* Styles for images within the product */
 .product img {
     width: 100%;
-    max-height: 400px;
+    max-height: 600px;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -125,13 +125,13 @@ footer {
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 15px;
-    color: white;
+    color: #007bff; /* Updated color */
 }
 
 /* Styles for the product description */
 .product-description {
     font-size: 18px;
-    color: white;
+    color: white; /* Updated color */
     margin-bottom: 20px;
     line-height: 1.6;
 }
@@ -139,12 +139,13 @@ footer {
 /* Styles for strong elements within the product description */
 .product-description strong {
     font-weight: bold;
-    color: white;
+    color: white; /* Updated color */
 }
 
 /* Styles for list items within the product description */
 .product-description li {
     margin-bottom: 10px;
+    color: white; /* Updated color */
 }
 
 /* Styles for the product price */
